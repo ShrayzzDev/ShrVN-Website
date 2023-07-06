@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<head xmlns="http://www.w3.org/1999/html">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../../css/style.css"/>
+  <title>ShrVN</title>
+</head>
+<body>
+<header>
+  <a href="../../index.html">
+    <h1 class="MainTitle">ShrVN</h1>
+  </a>
+</header>
+<nav>
+  <a href="../DocumentationMain.html">Documentation</a>
+  <a href="../About.html">About</a>
+</nav>
+<div class="MainDiv">
+  <h1>First, let's talk about how the files are structured.</h1>
+  <p class="Text">In a ShrVN project, you'll find two directories :</p>
+  <ul>
+    <li>The images directory</li>
+    <li>The init directory</li>
+  </ul>
+  <p>
+    The image directory is pretty self-explanatory, it will contain the images that will be used by the engine. </br>
+    Inside it, the project will also make a directory for each character, but we will talk about that deeper later </br>
+    The init directory will contain all the files needed to create the layout of the menus, screens, etc . . . </br>
+    Don't worry, these have base values and you wil not <em>have to</em> set them yourself. </br>
+    If you happen to delete a line by accident, that won't break anything, technically you could delete the init folder </br>
+    and the engine would still work, but I wouldn't recommend to do that, even if you don't change the values. </br>
+    (this will be detailed in the full documentation, here we'll focus on how to get a basic novel to run) </br>
+    </br>
+    In the root folder, there's another very import file, the "Characters.shrvn". It will be used to define Characters. </br>
+    So, let's talk about how ShrVN handles characters</br>
+  </p>
+  <h1>Characters</h1>
+  <p>
+    Here's an example of a character definition :
+  </p>
+  <pre>
+    <code>
+      Character jean("Jean")
+    </code>
+  </pre>
+  <p>
+    This is the easiest way to create a Character. </br>
+    Here, only the name showed in-game is precise, the base color is black #000000 </br>
+    The in-game name is Jean, and the instance name is jean. The difference is important. </br>
+    The instance name is the one you're going to use when the character is talking in the main script, like that:
+  </p>
+  <pre>
+    <code>
+      jean : "My name is Jean"
+    </code>
+  </pre>
+  <p>
+    You can also use the same name and instance name if you want, that won't cause any problems. </br>
+    Also, it is very recommended to use at least 2 letters instance name, for it to be clearer </br>
+    If you want to precise the color of the character, you can define the character like that:
+  </p>
+  <pre>
+    <code>
+      Character jean("Jean",25,25,25)
+    </code>
+  </pre>
+  <p>
+    You obviously need to precise the code of each color, if not the game will crash. </br>
+    </br>
+    Now, let's talk about images. </br>
+  </p>
+  <h1>Images in Characters</h1>
+  <p>
+    Each character has its own folder in the images folder. </br>
+    For example, here for Jean, when adding images it will look in the Jean folder, in the images folder. </br>
+    When instantiating a character, it will automatically create the folder, but you can create it yourself if you want. </br>
+    So, you may create all character, launch the game a first time for it to create all folders, and then put the images in it. </br>
+    NOTE : The name to the folder is the in-game character name <b>NOT THE INSTANCE NAME</b>. </br>
+    Each character has a list of images. You can add an image to a character like that:
+  </p>
+  <pre>
+    <code>
+      From jean Add smiling.png as Smiling
+    </code>
+  </pre>
+  <p>
+    After the 'From', you put the instance name of the character. </br>
+    After the Add you put the path to the image, from the images/<i>character_name</i> folder. </br>
+    After the As, you put the name that will be used when showing the image in the main script. </br>
+  </p>
+</div>
+</body>

@@ -1,0 +1,46 @@
+header {
+    background-color: lightgrey;
+    height: 70px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.MainTitle {
+    color: black;
+    padding: 12px;
+}
+
+nav {
+    background-color: #c0c0c0;
+    height: 30px;
+}
+
+nav > a {
+    font-size: 24px;
+    padding: 30px;
+}
+
+div {
+    display-flex: flex;
+    justify-content: center;
+    padding: 20px 40px 0px 40px;
+    font-size: 19px;
+}
+
+li > a {
+    font-size: 22px;
+}
+.MainDiv {
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+pre code {
+    background-color: #eee;
+    border: 1px solid #999;
+    display: block;
+    padding: 20px;
+}
