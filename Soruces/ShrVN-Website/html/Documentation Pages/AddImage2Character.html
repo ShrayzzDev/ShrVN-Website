@@ -12,9 +12,74 @@
 </header>
 <nav>
   <a href="../DocumentationMain.html">Documentation</a>
+  <a href="../Download.html">Download</a>
   <a href="../About.html">About</a>
 </nav>
 <div class="MainDiv">
-  <p>Add image to character</p>
+  <h1>Add image to character</h1>
+  <p>
+    In ShrVN, each character have images associated with it. </br>
+    It will search images in the <em>project_root</em>/images/<em>In-Game_name</em>/ folder. </br>
+    To add an image to a character you use that line:
+  </p>
+  <pre>
+    <code>
+      From character_instance Add image_path As image_name
+    </code>
+  </pre>
+  <p>
+    From :
+  </p>
+  <ul>
+    <li>
+      It's the keyword used to select a character and do something with it. In the character file, you can only add an image. </br>
+      Keep in mind that you <b>can't</b> use From statements meant for the main script files here. </br>
+    </li>
+  </ul>
+  </br>
+  <p>
+    character_instance :
+  </p>
+  <ul>
+    <li>
+      Instance name you used when creating the character.
+    </li>
+  </ul>
+  <p>
+    Add :
+  </p>
+  <ul>
+    <li>
+      Key word used to specify what From statement you use.
+    </li>
+  </ul>
+  <p>
+    image_path :
+  </p>
+  <ul>
+    <li>
+      Path to the image from the /images/<em>In-Game_name</em> folder </br>
+      If the file is directly in it, just put the file name. Don't forget to put the image name in the path. </br>
+      You also need to put the extension of the file in the path. </br>
+      NOTE : Only .jpg, .jpeg and .png files are supported for the moment.
+    </li>
+  </ul>
+  <p>
+    As :
+  </p>
+  <ul>
+    <li>
+      Keyword used to link to the image_name
+    </li>
+  </ul>
+  <p>
+    image_name :
+  </p>
+  <ul>
+    <li>
+      Name used to identify the image later in the script. </br>
+      Two images in the same character can't have the same name, but two images from different characters can.
+    </li>
+  </ul>
 </div>
 </body>

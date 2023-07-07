@@ -12,9 +12,73 @@
 </header>
 <nav>
   <a href="../DocumentationMain.html">Documentation</a>
+  <a href="../Download.html">Download</a>
   <a href="../About.html">About</a>
 </nav>
 <div class="MainDiv">
-  <p>Create a character.</p>
+  <h1>Define a character</h1>
+  <p>
+    To define a character, you have to be in the Character.shrvn file at the root of the project. </br>
+    You have to create a character variable like that :
+  </p>
+  <pre>
+    <code>
+      Character instance_name("In-Game_name")
+    </code>
+  </pre>
+  <p>
+    Or like that :
+  </p>
+  <pre>
+    <code>
+      Character instance_name("In-Game_name",red_value,green_value,blue_value)
+    </code>
+  </pre>
+  <p>
+    instance_name : </br>
+  </p>
+  <ul>
+    <li>
+      It's what the program will use to identify the character later in the code. </br>
+      Two different characters <b>CAN'T</b> have the same instance name </br>
+      For example, in the main script you will show the dialogue of a character like that: </br>
+     </li>
+  </ul>
+  <pre>
+    <code>
+      instance_name : "Things to say"
+    </code>
+  </pre>
+  <p>
+    In-Game_name : </br>
+  </p>
+  <ul>
+    <li>
+      It's the name is going to use when showing the dialogue of a character. </br>
+      You <b>can't</b> leave it empty or not put it. It <b> <em>is</em> mandatory</b> </br>
+      It's also the name that's going to be used to create the associated character folder in the /images/. </br>
+      Even if two different character can't have the same instance name, they can have the same In-Game_name. </br>
+      But be weary of the fact that they will use the same folder in the /images/ folder.
+    </li>
+  </ul>
+  <p>
+    red_value, blue_value and green_value:
+  </p>
+  <ul>
+    <li>
+      These are the color codes used by the engine when showing the name of a character when talking. </br>
+      They can't go above 255 (or FF in hexadecimals). </br>
+      You also can't only put just one, you need to else precise none (first way of instantiating a character </br>
+      Or precise them all. </br>
+      NOTE : If you want to put the code in hex, put 0x in front of the number, or else the engine is going </br>
+      to take it as a decimal, as it is what is reads by default. You can do one in hex and the others in decimal, </br>
+      and it shouldn't make issues. But it is not recommended as it will make your code more confusing. </br>
+    </li>
+  </ul>
+  </br>
+  <p>
+    The only difference between the two ways of declaring a character, is that in the first one you don't precise color codes, </br>
+    and in the second one you do. By default, (so in the first case), the color codes are all 0, the chracter name will be black. </br>
+  </p>
 </div>
 </body>
