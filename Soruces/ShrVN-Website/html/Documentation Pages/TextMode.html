@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="../../css/style.css"/>
+	<title>ShrVN</title>
+</head>
+<body>
+<header>
+	<a href="../../index.html">
+		<h1 class="MainTitle">ShrVN</h1>
+	</a>
+</header>
+<nav>
+	<a href="../DocumentationMain.html">Documentation</a>
+	<a href="../Download.html">Download</a>
+	<a href="../About.html">About</a>
+</nav>
+<div class="MainDiv">
+	<h1>Text Mode</h1>
+	<p>
+		This defines how the game is going to show text at the start of a new game. You have two choices :
+	</p>
+	<ul>
+		<li>
+			<h3>ADV</h3>
+			<p>
+				This one is the most common one in visual novels. In this mode, text is shown in a block very often at the bottom of the screen. </br>
+				The engine lets you chose your own coordinates for this block, see <a class="external_link" href="./MainBlockCoordinates.html">coordinates</a> for more infos on that </br>
+				This is the default mode.
+			</p>
+		</li>
+		<li>
+			<h3>NVL</h3>
+			<p>
+				This one is found less often but this is still used by some very popular VNs. Text can take the entire screen, while images can still be shown in the background. </br>
+				NOTE : Most parameters in the InGameOverlay.shvrn files are unused while in this mode. </br>
+			</p>
+		</li>
+	</ul>
+	</br>
+	<p>
+		NOTE : You can switch these modes in the main script, they are not definitive as this only set the one used at the beginning. (you can also never change them, that works too) </br>
+		For more infos on that, see the page about the <a class="external_link" href="./ChangeTextMode.html">change text mode</a> statement.
+	</p>
+</div>
+</body>

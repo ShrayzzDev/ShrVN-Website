@@ -49,3 +49,8 @@ pre code {
     display: block;
     padding: 20px;
 }
+
+ul {
+    list-style-type: disc;
+    color: black;
+}
