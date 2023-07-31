@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="../../css/style.css"/>
+	<title>ShrVN</title>
+</head>
+<body>
+<header>
+	<a href="../../index.html">
+		<h1 class="MainTitle">ShrVN</h1>
+	</a>
+</header>
+<nav>
+	<a href="../DocumentationMain.html">Documentation</a>
+	<a href="../Download.html">Download</a>
+	<a href="../About.html">About</a>
+</nav>
+<div class="MainDiv">
+	<h1>What is a Movement ?</h1>
+	<p>
+		I Think the name is pretty explicit, but I need to explain in more details in how it works. </br>
+		A Movement is defined in the Movement.shrvn at the root of the project. Move details on how to define a Movement <a class="external_link" href="./CreateAMovement.html">here</a> </br>
+		</br>
+		So, how does it work ? </br>
+		You only need to define a few points, how does it create an entire curve ? </br>
+		Well, it uses Bézier curves. The points you defines 'influence' the curve. The curve start at the first point, and finish at the last one. </br>
+		But it won't go through the other points. The curve will go close to that point, but never reach it. It creates smooth curves wherever you put the control points </br>
+		Usually, 4 points are largely enough to create curves. Most simulations only will only let you use 4 points, and you probably won't need more.</br>
+		But in theory, ShrVN does not limit you to 4 point, you could use any amount. But also keep in mind that if you use too much points, it may cause lags </br>
+		It shouldn't be a problem expect if you use an absurd amount of points, but since adding points, also add complexity. </br>
+		But I'm not here to do a full math class on Bézier curves, if you want to go deeper on the formulas and how it technically works, go on the internet </br>
+		And if you don't want to learn how they work but still use them, you can search for Bézier curves simulator on the internet. </br>
+		I may do one myself and implement it, but that will come with/after the GUI (so not for now) </br>
+	</p>
+</div>
+</body>
