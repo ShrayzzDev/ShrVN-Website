@@ -1,10 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<head xmlns="http://www.w3.org/1999/html">
 	<meta charset="UTF-8">
-	<title>Title</title>
+	<link rel="stylesheet" href="../../css/style.css"/>
+	<title>ShrVN</title>
 </head>
 <body>
+<header>
+	<a href="../../index.html">
+		<h1 class="MainTitle">ShrVN</h1>
+	</a>
+</header>
+<nav>
+	<a href="../DocumentationMain.html">Documentation</a>
+	<a href="../Download.html">Download</a>
+	<a href="../About.html">About</a>
+</nav>
+<div class="MainDiv">
+	<h1>Show an image from a character</h1>
+	<p>
+		To show an image from a character, you add a line like this one : </br>
+	</p>
+	<pre>
+		<code>
+			From <em>character_instance</em> Show <em>image_name</em> At x_coord,y_coord
+		</code>
+	</pre>
+	<p>
+		With that, it will show the given image from the given character at given coordinates. </br>
+		But you can also do it like that :
+	</p>
+	<pre>
+		<code>
+			From <em>character_instance</em> Show <em>image_name</em> With <em>movement_name</em>
+		</code>
+	</pre>
+	<p>
+		This will create a character and apply given movement. More infos on movement <a class="external_link" href="./WhatIsMovement.html">here</a></br>
+	</p>
 
+</div>
 </body>
-</html>
