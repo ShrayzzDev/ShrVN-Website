@@ -25,6 +25,6 @@ jobs:
                 END
                 ssh staging "git pull; docker-compose up -d"
               env: 
-                SSH_PRIVATE_KEY: ${{ secrets.DEPLOY_KEY }}
+                DEPLOY_KEY : ${{ secrets.DEPLOY_KEY }}
                 SERVER_HOST: ${{ secrets.SERVER_HOST }}
                 DEPLOYING_SERVER: ${{ secrets.DEPLOYING_SERVER }}
