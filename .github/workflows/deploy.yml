@@ -27,3 +27,6 @@ jobs:
                 SSH_PRIVATE_KEY: ${{ secrets.DEPLOY_KEY }}
                 SERVER_HOST: ${{ secrets.SERVER_HOST }}
                 DEPLOYING_SERVER: ${{ secrets.DEPLOYING_SERVER }}
+            - name: Deploy website
+              run: |
+                ssh staging "git pull; docker-compose up -d"
